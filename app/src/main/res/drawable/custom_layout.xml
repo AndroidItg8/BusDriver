@@ -34,13 +34,20 @@
     <!--</item>-->
 
     <item android:drawable="@color/colorPrimary"/>
-    <!--<item  android:gravity="center" android:alpha="0.3"-->
-        <!--android:bottom="4dp"-->
-        <!--android:top="4dp"-->
-        <!--android:left="4dp"-->
-        <!--android:right="4dp">-->
+    <item>
 
-    <!--</item>-->
+        <!--android:drawable="@drawable/bus"-->
+
+
+        <bitmap android:src="@drawable/bus"
+            android:gravity="center" android:alpha="0.1"
+
+            android:top="50dp"
+            android:bottom="50dp"
+            android:right="50dp"
+            android:left="50dp"/>
+
+    </item>
 
     <item android:top="300dp"
         android:bottom="-100dp"
