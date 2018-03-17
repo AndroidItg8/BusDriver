@@ -17,6 +17,8 @@
     <color name="colorGray">#6b6969</color>
     <color name="colorGrayLight">#afb6b4b4</color>
     <color name="colorGrayLights">#afedecec</color>
+    <color name="colorLogin">#5F5768</color>
+
 
 
 </resources>

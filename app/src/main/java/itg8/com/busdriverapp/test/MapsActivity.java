@@ -1,4 +1,4 @@
-package itg8.com.busdriverapp;
+package itg8.com.busdriverapp.test;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import itg8.com.busdriverapp.R;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 

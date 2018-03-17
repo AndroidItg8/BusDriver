@@ -25,6 +25,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import itg8.com.busdriverapp.R;
+import itg8.com.busdriverapp.home.HomeActivity;
 import itg8.com.busdriverapp.home.HomeFragment;
 import itg8.com.busdriverapp.rout_status.RouteStatusFragment;
 
@@ -143,18 +144,22 @@ public class AdminMapFragment extends Fragment implements OnMapReadyCallback, Vi
             case R.id.ll_children:
                 type= Type.CHILDREN;
                 changeChildrenTextViewColor();
+                ((HomeActivity)getActivity()).openDrawerLayout();
                 break;
             case R.id.ll_halts:
                 type = Type.HALTS;
                 changeHaltsTextViewColor();
+                ((HomeActivity)getActivity()).openDrawerLayout();
                 break;
             case R.id.ll_skip:
                 type = Type.HALTS;
                 changeSkipTextViewColor();
+                ((HomeActivity)getActivity()).openDrawerLayout();
                 break;
 
         }
-        openListFragment(type);
+//        openListFragment(type);
+
     }
 
     private void openListFragment(Type type) {

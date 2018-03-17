@@ -1,7 +1,6 @@
 package itg8.com.busdriverapp.rout_status;
 
 import android.content.Context;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,7 +43,7 @@ public class RouteStatusAdapter extends RecyclerView.Adapter<RouteStatusAdapter.
 
     @Override
     public int getItemCount() {
-        return 10;
+        return 15;
     }
 
     public class StatusViewHolder extends RecyclerView.ViewHolder {

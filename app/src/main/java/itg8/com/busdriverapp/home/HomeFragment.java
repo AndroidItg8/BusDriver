@@ -1,6 +1,7 @@
 package itg8.com.busdriverapp.home;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -74,6 +75,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private Context context;
 
 
     public HomeFragment() {
@@ -135,6 +137,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.lbl_let_start:
                 fragment= AdminMapFragment.newInstance("", "");
 
+
                 break;
 
 
@@ -145,5 +148,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private void callFragment(Fragment fragment) {
         FragmentManager fm = getActivity().getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.frame_container, fragment, fragment.getClass().getSimpleName()).commit();
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        this.context = context;
+
     }
 }
